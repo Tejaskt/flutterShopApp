@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shopapp/global_variables.dart';
-import 'package:shopapp/product_details_page.dart';
+import 'package:shopapp/pages/product_details_page.dart';
 
 class ProductListPage extends StatefulWidget {
   const ProductListPage({super.key});
@@ -22,6 +22,8 @@ class _ProductListPageState extends State<ProductListPage> {
 
   @override
   Widget build(BuildContext context) {
+
+    final size = MediaQuery.of(context).size;
 
     const border = OutlineInputBorder(
       borderSide: BorderSide(
